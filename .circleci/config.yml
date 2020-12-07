@@ -7,6 +7,7 @@ jobs:
     steps:
       - checkout
       - run:
+          command: chmod 777 test
           ./test.py
       - run:
           command: ./manage.py
